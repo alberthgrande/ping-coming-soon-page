@@ -1,0 +1,75 @@
+@import url(reset.css);
+
+:root {
+  --primary-Blue: hsl(223, 87%, 63%);
+
+  --secondary-Pale-Blue: hsl(223, 100%, 88%);
+  --secondary-Light-Red: hsl(354, 100%, 66%);
+
+  --nuetral-Gray: hsl(0, 0%, 59%);
+  --nuetral-Very-Dark-Blue: hsl(209, 33%, 12%);
+
+  --fs-body: 1.25rem;
+
+  --fw-300: 300;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-family: var(--font-family);
+  /* font-size: var(--fs-body); */
+}
+
+.container {
+  margin: 0 1rem;
+}
+
+/************************* 
+form
+**************************/
+.form-group button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-Blue);
+  box-shadow: var(--primary-Blue) 0px 8px 24px;
+  color: hsl(0, 0%, 100%);
+  font-weight: var(--fw-300);
+}
+.form-group small {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--secondary-Light-Red);
+}
+@media only screen and (max-width: 48rem) {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control {
+    padding: 0.5rem;
+    border-radius: 20rem;
+  }
+
+  .form-group button {
+    margin: 1rem 0;
+  }
+}
+/************************* 
+dashboard-image
+**************************/
+.dashboard-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
